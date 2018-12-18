@@ -1,0 +1,246 @@
+.nav-main{
+	width: 900px;
+	height: 480px;
+	margin-left: 268px;
+}
+.nav-main-center{
+	width: 680px;
+/*	background: blue;*/
+	height: 480px;
+	padding-right:20px;
+}
+.nav-main-center h3{
+	margin-right: 10px;
+}
+.nav-main-center .hotgroupbuy{
+	height: 48px;
+	line-height: 48px;
+	border-bottom: 1px solid #ddd;
+}
+.nav-main-center .hotgroupbuy ul{
+	height: 48px;
+}
+.nav-main-center .hotgroupbuy li{
+	float: left;
+	margin:0 10px;
+}
+.nav-main-center .hotgroupbuy li a{
+	color:#666;
+}
+.nav-main-center .slide{
+	width: 678px;
+	height: 332px;
+	border-bottom:1px solid #ddd;
+}
+.nav-main-center .slide .slideitem{
+	border-right:1px solid #ddd;
+	height: 322px;
+	padding: 10px 6px 0;
+}
+.nav-main-center .slide .imgbox{
+	padding:3px;
+}
+.nav-main-center .slide img{
+	width:320px;
+	height:231px;
+}
+.nav-main-center .slide .slidelist{
+	height: 100%;
+}
+.nav-main-center .slide .slidelist .imgbox{
+	margin-bottom:10px;
+}
+.nav-main-center .slide .slidelist .txtbox{
+	height: 42px;
+	margin-top: 20px;
+}
+.txtbox .txtinfo{
+	width: 245px;
+	border-right: 1px solid #ddd;
+}
+.txtbox .txtinfo h3{
+	margin:10px 0;
+}
+.price{
+	color:#f76120;
+	font-size: 30px;
+	margin-right: 10px;
+}
+.nav-main-right{
+
+	width: 200px;
+	background: red;
+	height: 480px;
+
+}
+
+
+/***************商品展示模块****************************************/
+.item{
+	border:1px solid #ddd;
+	float: left;
+	margin-left:-1px;
+	margin-top:-1px;
+	padding:10px 15px 10px;
+}
+.item .txt-title a{
+	text-decoration: none;
+}
+.txt-title h4{
+	line-height: 30px;
+	font-size:14px;
+}
+.txt-title p{
+	color:#999;
+	margin-top:5px;
+}
+.txt-detail{
+	line-height: 40px;
+	height: 40px;
+	border-bottom: 1px dotted #ddd;
+	vertical-align: top;
+}
+.curprice{
+	font-size: 20px;
+	color:#f76120;
+}
+.oldprice{
+	color:#666;
+	font-size: 12px;
+	text-decoration:line-through;
+}
+.txt-extral{
+	margin-top:4px;
+	height: 20px;
+	vertical-align: top;
+	padding-top: 10px;
+}
+.txt-extral .fl{
+	background: #f76120;
+	display: inline-block;
+	color:#fff;
+}
+.txt-extral a{
+	text-decoration: none;
+}
+.star-outer {
+	display:inline-block; 
+	width:60px; 
+	height:12px; 
+	background:url(../images/star.png) repeat-x 0 0; 
+	margin-right:5px;
+}
+.star-inner {
+	display:inline-block;
+	height:12px;
+	width:50%; 
+	background:url(../images/star-hover.png) repeat-x 0 0; 
+}
+.item .imgbox{
+	margin-bottom:10px;
+	position:relative;
+}
+.item .imgbox img{
+	width: 260px;
+	height: 150px;
+	display:block;
+	margin: 0 auto;
+}
+.nobooking{
+	width: 43px;
+	height: 40px;
+	background: url("../images/base.png") 0 -450px no-repeat;
+	display: block;
+	position:absolute;
+	top:-4px;
+	left: 0;
+	text-indent: -9999px;	
+}
+.voucher{
+	width: 43px;
+	height: 40px;
+	background: url("../images/base.png") 0 -619px no-repeat;
+	display: block;
+	position:absolute;
+	top:-4px;
+	left: 45px;
+	text-indent: -9999px;
+}
+/***************商品展示模块结束****************************************/
+.famous{     					/***名店导航****/
+	height: 350px;
+	background: #fff;
+}
+.famous .timer{
+	border:1px solid #ddd;
+	height: 40px;
+	width: 150px;
+	margin-left: 20px;
+	border-radius: 3px;
+	position:relative;
+}
+.timer .arrow-outer{
+	border: 10px solid transparent;
+	width: 0;
+	height: 0;
+	display: block;
+	position:absolute;
+	border-right-color:#ddd;
+	top:10px;
+	left:-20px;
+}
+.timer .arrow-inner{
+	border: 8px solid transparent;
+	width: 0;
+	height: 0;
+	display: block;
+	position:absolute;
+	border-right-color:#fff;
+	top:-8px;
+	left:-6px;
+}
+/*arrow-inner*/
+.food{
+	
+}
+.sectitle{
+	height: 42px;
+	line-height: 42px;
+	margin-bottom: 10px;
+}
+.sectitle ul{
+
+}
+.sectitle ul li{
+	margin-top:9px;
+	float: left;
+	line-height: 12px;
+	margin-left: 10px;
+	padding:0 10px;
+	border-right:1px solid #ddd;
+}
+.famous .item{
+	padding: 6px;
+}
+.famous .item .imgbox img{
+	width: 205px;
+	height: 128px;
+}
+.famouslist{
+	position: relative;
+	height: 272px;
+	/*background: red;*/
+	overflow: hidden;
+	border:1px solid #ddd;
+}
+.famouslist ul{
+	position:absolute;
+	top:0;
+	left:0;
+	width: 4680px;/*1170*3 +1170*/;
+	height: 272px;
+}
+.famouslist ul li{
+	float: left;
+}
+

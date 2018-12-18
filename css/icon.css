@@ -1,0 +1,48 @@
+.icon-mobile{				/*手机美团小图标*/
+	display: inline-block;
+	width: 9px;
+	height: 13px;
+	background: #fff url('../images/sp-main.png') -334px -141px no-repeat;
+	position: relative;
+	top:2px;
+}
+.icon-tri{
+	display: inline-block;
+	height: 0;
+	width: 0;
+	border: 4px solid transparent;
+	border-top-color:#333;
+	position:absolute;
+	top:13px;
+	right:3px;
+}
+.icon-return{
+	background: url("../images/sp-main.png") -319px -227px no-repeat;
+	width: 23px;
+	height: 23px;
+	display: block;
+	margin: 0 auto;
+}
+.icon-free{
+	background: url("../images/sp-main.png") -319px -227px no-repeat;
+	width: 23px;
+	height: 23px;
+	display: block;
+	margin: 0 auto;
+}
+.icon-expire{
+	background: url("../images/sp-main.png") -319px -227px no-repeat;
+	width: 23px;
+	height: 23px;
+	display: block;
+	margin: 0 auto;
+}
+.icon-arrow-right{
+	background: url('../images/arrow-right.png') center center no-repeat;
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	position:relative;
+	top:15px;
+
+}

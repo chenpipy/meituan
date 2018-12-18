@@ -1,0 +1,64 @@
+/*----------------------------------------------------footer------------------------------*/
+.footer-links{
+
+}
+.footer-links dl{
+	float: left;
+}
+.footer-links dl dt{
+	line-height: 50px;
+	font-size: 20px;
+	margin-right: 150px;
+	color:#666;
+}
+.footer-links dl a{
+	color:#999;
+	line-height: 20px;
+}
+.contact{
+
+	padding:20px 0 20px 50px;
+	border-left:1px solid #ddd;
+}
+.contact a{
+	color:#2bb8aa;
+}
+
+.copyright{
+	width: 100%;
+	background: #f9f9f9;
+	border-top:1px solid #ddd;
+	height: 200px;
+}
+.copyright p{
+	margin:20px 0;
+}
+.copyright .icon-record-ft{
+	background-image: url(../images/sp-footer.png);
+	background-repeat:no-repeat;
+	display: inline-block;
+	height: 40px;
+	width: 113px;
+	background-position: 0 -166px; 
+	text-indent: -9999px;
+
+}
+.copyright .icon-credible-ft{
+	background-image: url(../images/sp-footer.png);
+	background-repeat:no-repeat;
+	display: inline-block;
+	height: 40px;
+	width: 110px;
+	background-position: 0 -126px; 
+	text-indent: -9999px;
+
+}
+.copyright .icon-12315-ft{
+	background-image: url(../images/sp-footer.png);
+	background-repeat:no-repeat;
+	display: inline-block;
+	height: 40px;
+	width: 113px;
+	background-position: 0 -39px; 
+	text-indent: -9999px;
+}

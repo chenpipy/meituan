@@ -1,0 +1,1727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>主页</title>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+
+	<link rel="stylesheet" href="css/icon.css">
+	<link rel="stylesheet" href="css/index.css">
+
+
+	<link rel="shortcut icon" href="images/favicon.ico">
+</head>
+<body>
+<!-- 顶部头部 -->
+	<div class="top mb10">
+		<div class="w1170 mc">
+		<!-- 左边的基本信息 -->
+			<ul class="basic fl">
+				<li><a class="collect" href="">收藏美团</a></li>
+				<li><a class="login" href="">登录</a></li>
+				<li><a class ="reg" href="">注册</a></li>
+				<li class="toggleli on">
+					<a href="" class="dropdown">
+						<i class="icon-mobile"></i>
+						<span>手机美团</span>
+						<i class="icon-tri"></i>
+					</a>
+					<div class="toggle-menu">
+						<ul>
+							<li>
+								<a><span class="borderleft" href="">免费下载美团手机版</span>
+									<div>
+										<img class="mc" src="images/weixin1.png" alt="">
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href=""><span class="borderleft">免费下载美团手机版</span>
+									<div>
+										<img src="images/weixin1.png" alt="">
+									</div>
+								</a>
+							</li>
+						</ul>	
+					</div>
+				</li>
+			</ul>
+		<!-- 左边的基本信息 end-->
+
+		<!-- 右边的信息 -->
+			<ul class="user fr">
+				<li>
+					<a href="">我的订单</a>
+				</li>
+				<li class="toggleli on1">
+					<a href="" class="dropdown">
+						<span>我的美团</span>
+						<i class="icon-tri"></i>
+						<i class="vertical-line"></i>
+					</a>
+					<div class="toggle-menu">
+						<ul >
+							<li><a href="">我的订单</a></li>
+							<li><a href="">我的评价</a></li>
+							<li><a href="">我的收藏</a></li>
+							<li><a href="">我的积分</a></li>
+							<li><a href="">抵用券</a></li>
+							<li><a href="">余额</a></li>
+							<li><a href="">设置</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="toggleli on1">
+					<a href="" class="dropdown">
+						<span>最近浏览</span>
+						<i class="icon-tri"></i>
+						<i class="vertical-line"></i>
+					</a>
+					<div class="toggle-menu">
+						<p>暂时没有信asfssdfsfsd息</p>
+					</div>
+				</li>
+				<li class="toggleli">
+					<a href="" class="dropdown">
+						<span>购物车<b>0</b>件</span>
+						<i class="icon-tri"></i>
+						<i class="vertical-line"></i>
+					</a>
+					<div class="toggle-menu">
+						<p>暂时没有商品</p>
+					</div>
+				</li>
+				<li class="toggleli">
+					<a href="" class="dropdown">
+						<span>联系客服</span>
+						<i class="icon-tri"></i>
+						<i class="vertical-line"></i>
+					</a>
+					<div class="toggle-menu">
+						<ul>
+							<li><a href="">申请退款</a></li>
+							<li><a href="">申请退货</a></li>
+							<li><a href="">查看美团券</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="toggleli">
+					<a href="" class="dropdown">
+						<span>我是商家</span>
+						<i class="icon-tri"></i>
+						<i class="vertical-line"></i>
+					</a>
+					<div class="toggle-menu">
+						<ul>
+							<li><a href="">登陆商家中心</a></li>
+							<li><a href="">我想合作</a></li>
+							<li><a href="">手机免费开店</a></li>
+						</ul>
+					</div>
+				</li>
+				<li class="toggleli">
+					<a href="" class="dropdown">
+						<span>更多</span>
+						<i class="icon-tri"></i>
+					</a>
+					<div class="toggle-menu">
+						<ul>
+							<li><a href="">手机版</a></li>
+							<li><a href="">邮件定阅</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		<!-- 右边的信息 end -->
+		</div>
+	</div>
+<script>
+	var lis = document.querySelectorAll(".toggleli");
+	
+	for(var i=0,len = lis.length;i<len;i++){
+		lis[i].onmouseenter = function(){
+			this.className = "toggleli on";
+		}
+		lis[i].onmouseleave = function(){
+			this.className = "toggleli";
+		}
+	}
+</script>
+
+<!-- 顶部搜索 -->
+	<div class="logoandsearch w1170 mc mb10">
+	<!-- 左边logo部分 -->
+		<div class="fl logowarp">
+			<a class="logo-link" href="">
+				美团
+			</a>
+			<div class="city fl">
+				<h2>北京</h2>
+				<a href="">切换城市</a>
+			</div>
+		</div>
+	<!-- 左边logo部分 -->
+
+	<!-- 中间搜索主体部分 -->
+		<div class="search-box fl">
+			<form>
+				<div class="current-search-box fl">
+					<a class="current-search" href=""><span>团购</span><i class="icon-tri"></i></a>
+					<div style="display:none">
+						<ul>
+							<li><a href="">商家</a></li>
+						</ul>
+					</div>
+				</div>
+				<input class="search-input fl" placeholder="请输入信息" type="text"/>
+				<input class="search-btn fr" type="button" value="搜索">
+			</form>
+			<ul class="hotsearch">
+				<li><a href="">正一味</a></li>
+				<li><a href="">披萨</a></li>
+				<li><a href="">蛋糕</a></li>
+				<li><a href="">权金城</a></li>
+				<li><a href="">巴依</a></li>
+				<li><a href="">黄记煌</a></li>
+				<li><a href="">再清椿</a></li>
+				<li><a href="">秦门</a></li>
+				<li><a href="">味多美</a></li>
+			</ul>
+		</div>
+	<!--中间搜索主体部分edn -->
+		<div class="commitment fr">
+			<a href=""><i class="icon-return"></i><span>随时退</span></a>
+			<a href=""><i class="icon-free"></i><span>不满意免单</span></a>
+			<a href=""><i class="icon-expire"></i><span>过期退</span></a>
+		</div>
+	</div>
+<!-- 顶部搜索结束 -->
+
+<!-- 内容导航条 -->
+	<div class="nav w1170 mc mb10">
+		
+		<div class="menu">
+			<!-- 全部分类 -->
+			<div class="menu-categroy">
+				<h2>全部分类</h2>
+				<ul class="cate">
+					<li class="cate-item">
+						<div class="cate-item-level1">
+							<span class="fl cats-item-name">
+								<a href="">生活服务</a>
+							</span>
+							<i class="icon-arrow-right fr"></i>
+							<span class="fr"><a href="">婚纱摄影</a> <a href="">个性写真</a></span>
+						</div>
+						<div class="cate-item-level2">
+							<dl>
+								<dt><a href="">婚纱摄影</a></dt>
+								<dd><a href="">代金券</a></dd>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">个性写真</a></dt>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+							</dl>
+							
+						</div>
+					</li>
+					<li class="cate-item">
+						<div class="cate-item-level1">
+							<span class="fl cats-item-name">
+								<a href="">生活服务</a>
+							</span>
+							<i class="icon-arrow-right fr"></i>
+							<span class="fr"><a href="">婚纱摄影</a> <a href="">个性写真</a></span>
+						</div>
+						<div class="cate-item-level2">
+							<dl>
+								<dd><a href="">代金券</a></dd>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">个性写真</a></dt>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+							</dl>
+							
+						</div>
+					</li>
+					<li class="cate-item">
+						<div class="cate-item-level1">
+							<span class="fl cats-item-name">
+								<a href="">KTV</a>
+							</span>
+							<i class="icon-arrow-right fr"></i>
+							<!-- <span class="fr"><a href="">婚纱摄影</a> <a href="">个性写真</a></span> -->
+						</div>
+						<div class="cate-item-level2">
+							<dl>
+								<dd><a href="">代金券</a></dd>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">个性写真</a></dt>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+							</dl>
+							
+						</div>
+					</li>
+					<li class="cate-item">
+						<div class="cate-item-level1">
+							<span class="fl cats-item-name">
+								<a href="">生活服务</a>
+							</span>
+							<i class="icon-arrow-right fr"></i>
+							<span class="fr"><a href="">婚纱摄影</a> <a href="">个性写真</a></span>
+						</div>
+						<div class="cate-item-level2">
+							<dl>
+								<dd><a href="">代金券</a></dd>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">个性写真</a></dt>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+							</dl>
+							
+						</div>
+					</li>
+					<li class="cate-item">
+						<div class="cate-item-level1">
+							<span class="fl cats-item-name">
+								<a href="">生活服务</a>
+							</span>
+							<i class="icon-arrow-right fr"></i>
+							<span class="fr"><a href="">婚纱摄影</a> <a href="">个性写真</a></span>
+						</div>
+						<div class="cate-item-level2">
+							<dl>
+								<dt><a href="">婚纱摄影</a></dt>
+								<dd><a href="">代金券</a></dd>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">个性写真</a></dt>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+							</dl>
+							
+						</div>
+					</li>
+					<li class="cate-item">
+						<div class="cate-item-level1">
+							<span class="fl cats-item-name">
+								<a href="">生活服务</a>
+							</span>
+							<i class="icon-arrow-right fr"></i>
+							<span class="fr"><a href="">婚纱摄影</a> <a href="">个性写真</a></span>
+						</div>
+						<div class="cate-item-level2">
+							<dl>
+								<dd><a href="">代金券</a></dd>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">个性写真</a></dt>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+							</dl>
+							
+						</div>
+					</li>
+					<li class="cate-item">
+						<div class="cate-item-level1">
+							<span class="fl cats-item-name">
+								<a href="">生活服务</a>
+							</span>
+							<i class="icon-arrow-right fr"></i>
+							<span class="fr"><a href="">婚纱摄影</a> <a href="">个性写真</a></span>
+						</div>
+						<div class="cate-item-level2">
+							<dl>
+								<dd><a href="">代金券</a></dd>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">个性写真</a></dt>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+							</dl>
+							
+						</div>
+					</li>
+					<li class="cate-item">
+						<div class="cate-item-level1">
+							<span class="fl cats-item-name">
+								<a href="">生活服务</a>
+							</span>
+							<i class="icon-arrow-right fr"></i>
+							<span class="fr"><a href="">婚纱摄影</a> <a href="">个性写真</a></span>
+						</div>
+						<div class="cate-item-level2">
+							<dl>
+								<dd><a href="">代金券</a></dd>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">个性写真</a></dt>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+							</dl>
+							
+						</div>
+					</li>
+					<li class="cate-item">
+						<div class="cate-item-level1">
+							<span class="fl cats-item-name">
+								<a href="">生活服务</a>
+							</span>
+							<i class="icon-arrow-right fr"></i>
+							<span class="fr"><a href="">婚纱摄影</a> <a href="">个性写真</a></span>
+						</div>
+						<div class="cate-item-level2">
+							<dl>
+								<dd><a href="">代金券</a></dd>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">个性写真</a></dt>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+							</dl>
+							
+						</div>
+					</li>
+					<li class="cate-item ">
+						<div class="cate-item-level1 last">
+							<span class="fl cats-item-name">
+								<a href="">生活服务</a>
+							</span>
+							<i class="icon-arrow-right fr"></i>
+							<span class="fr"><a href="">婚纱摄影</a> <a href="">个性写真</a></span>
+						</div>
+						<div class="cate-item-level2">
+							<dl>
+								<dd><a href="">代金券</a></dd>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+							</dl>
+							<dl>
+								<dt><a href="">个性写真</a></dt>
+								<dd><a href="">甜点饮品</a></dd>
+								<dd><a href="">火锅</a></dd>
+								<dd><a href="">自助</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+								<dd><a href="">东北菜</a></dd>
+								<dd><a href="">川湘菜</a></dd>
+								<dd><a href="">小吃快餐</a></dd>
+								<dd><a href="">日韩料理</a></dd>
+								<dd><a href="">西餐</a></dd>
+								<dd><a href="">聚餐宴请</a></dd>
+								<dd><a href="">烧烤烤肉</a></dd>
+							</dl>
+							
+						</div>
+					</li>
+
+					
+				</ul>
+			</div>
+			<!-- 分类导航列表 -->
+			<ul class="menu-bar">
+				<li><a href="">首页</a></li>
+				<li><a href="">今日新单</a></li>
+				<li><a href="">购物</a></li>
+				<li><a href="">身边外卖</a></li>
+				<li><a href="">名店抢购</a></li>
+			</ul>
+		</div>
+		<div class="nav-main">
+			<div class="nav-main-center fl">
+				<div class="hotgroupbuy">
+					<h3 class="fl">热门团购</h3>
+					<ul class="fl">
+						<li><a href="">景点门票</a></li>
+						<li><a href="">自助餐</a></li>
+						<li><a href="">火锅</a></li>
+						<li><a href="">小吃快餐</a></li>
+						<li><a href="">烧烤烤肉</a></li>
+						<li><a href="">KTV</a></li>
+						<li><a href="">景点足疗</a></li>
+						<li><a href="">按摩</a></li>
+						<li><a href="">西餐</a></li>
+						<li><a href="">美发</a></li>
+					</ul>
+				</div>
+				<div class="hotgroupbuy">
+					<h3 class="fl">热门团购</h3>
+					<ul class="fl">
+						<li><a href="">景点门票</a></li>
+						<li><a href="">自助餐</a></li>
+						<li><a href="">火锅</a></li>
+						<li><a href="">小吃快餐</a></li>
+						<li><a href="">烧烤烤肉</a></li>
+						<li><a href="">KTV</a></li>
+						<li><a href="">景点足疗</a></li>
+						<li><a href="">按摩</a></li>
+						<li><a href="">西餐</a></li>
+						<li><a href="">美发</a></li>
+					</ul>
+				</div>
+				<div class="hotgroupbuy">
+					<h3 class="fl">热门团购</h3>
+					<ul class="fl">
+						<li><a href="">景点门票</a></li>
+						<li><a href="">自助餐</a></li>
+						<li><a href="">火锅</a></li>
+						<li><a href="">小吃快餐</a></li>
+						<li><a href="">烧烤烤肉</a></li>
+						<li><a href="">KTV</a></li>
+						<li><a href="">景点足疗</a></li>
+						<li><a href="">按摩</a></li>
+						<li><a href="">西餐</a></li>
+						<li><a href="">美发</a></li>
+					</ul>
+				</div>
+				<div class="slide">
+				<!-- 图片轮播 -->
+					<div class="slidelist clearfix">
+						<div class="fl slideitem">
+							<div class="imgbox">
+								<a href="">
+									<img src="images/slide1.jpg" alt="">
+								</a>
+							</div>
+							<div class="txtbox">
+								<div class="txtinfo fl">
+									<h3><a href="">老北京涮肉</a></h3>
+									<p>味道非常好！味味道非</p>
+								</div>
+								<div class="price fr">
+									<span>￥<b>98</b></span>
+								</div>
+							</div>
+						</div>
+						<div class="fl slideitem">
+							<div class="imgbox">
+								<a href="">
+									<img src="images/slide1.jpg" alt="">
+								</a>
+							</div>
+							<div class="txtbox">
+								<div class="txtinfo fl">
+									<h3><a href="">老北京涮肉</a></h3>
+									<p>味道非常好！味味道非</p>
+								</div>
+								<div class="price fr">
+									<span>￥<b>98</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="nav-main-right fr">
+				
+			</div>
+		</div>
+
+<script>
+		// var lis = document.querySelectorAll(".cate-item");
+		
+		// for(var i=0,len = lis.length;i<len;i++){
+		// 	lis[i].onmouseenter = function(){
+		// 		this.className = "cate-item on";
+		// 	}
+		// 	lis[i].onmouseleave = function(){
+		// 		this.className = "cate-item";
+		// 	}
+		// }
+</script>
+	</div>
+<!-- 内容导航条 end-->
+
+	<div class="w1170 mc mb10 famous">
+		<div class="sectitle">
+			<h2  class="fl">名店抢购</h2>
+			<div class="fl timer">
+				<span>1:35:34</span>
+				<span class="arrow-outer">
+					<span class="arrow-inner"></span>
+				</span>
+			</div>
+		</div>
+		<div class="famouslist">
+			<ul id="famouselist">
+				<li>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>1【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>1【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>1【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>1【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>1【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>2【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>2【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>2【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>2【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>2【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>3【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>3【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>3【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>3【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>3【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</li>
+
+				<li>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic7.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>1【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic6.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>1【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic4.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>1【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic3.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>1【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<div class="imgbox">
+							<a href=""><img src="images/food-pic1.jpg" alt=""></a>
+						</div>
+						<div class="txtbox">
+							<div class="txt-title">
+								<a href="">
+									<h4>1【回龙观】同湘会</h4>
+									<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+								</a>
+							</div> 
+							<p class="txt-detail">
+								<span class="fl">
+								<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+								</span> 
+								<span class="fr"><i class="salednumber">已售80947</i></span>
+							</p>
+							<p class="txt-extral">
+								<span class="fl">手机购买立减¥15</span>
+								<a class="fr" href="">
+									<span class="star-outer">
+										<span class="star-inner"></span>
+									</span>
+									<span>1344人评价</span>
+								</a>
+							</p>
+						</div>
+					</div>
+				</li>
+
+
+			</ul>
+		</div>
+
+
+	</div>
+<script>
+	var famouselist = document.getElementById("famouselist");
+
+	console.info(famouselist.offsetLeft);
+
+	var timer = null;
+	famouselist.onmouseenter = function(){
+		clearInterval(timer);
+	}
+	famouselist.onmouseleave = function(){
+		//move();
+	}
+	function move(){
+		timer = setInterval(function(){
+
+			famouselist.style.left = famouselist.offsetLeft-3 + "px";
+
+			if( famouselist.offsetLeft < -1170 * 3 ){
+				famouselist.style.left = "0px";
+			}
+			//console.info( famouselist.offsetLeft < -1170 * 3);
+		},25);
+	}
+	//move();
+
+</script>
+
+	<div class="w1170 mc mb10 food">
+		<div class="sectitle">
+			<h2 class="fl">美食</h2>
+			
+			<ul class="fr">
+				<li><a href="">美食</a></li>
+				<li><a href="">代金券</a></li>
+				<li><a href="">自助餐</a></li>
+				<li><a href="">火锅</a></li>
+				<li><a href="">烧烤烤肉</a></li>
+				<li><a href="">香锅烤鱼</a></li>
+				<li><a href="">西餐</a></li>
+				<li><a href="">全部</a></li>
+			</ul>
+		</div>
+		<div class="clearfix">
+			<div class="item">
+				<div class="imgbox">
+					<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+				</div>
+				<div class="txtbox">
+					<div class="txt-title">
+						<a href="">
+							<h4>【回龙观】同湘会</h4>
+							<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+						</a>
+					</div> 
+					<p class="txt-detail">
+						<span class="fl">
+						<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+						</span> 
+						<span class="fr"><i class="salednumber">已售80947</i></span>
+					</p>
+					<p class="txt-extral">
+						<span class="fl">手机购买立减¥15</span>
+						<a class="fr" href="">
+							<span class="star-outer">
+								<span class="star-inner"></span>
+							</span>
+							<span>1344人评价</span>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="imgbox">
+					<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+				</div>
+				<div class="txtbox">
+					<div class="txt-title">
+						<a href="">
+							<h4>【回龙观】同湘会</h4>
+							<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+						</a>
+					</div> 
+					<p class="txt-detail">
+						<span class="fl">
+						<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+						</span> 
+						<span class="fr"><i class="salednumber">已售80947</i></span>
+					</p>
+					<p class="txt-extral">
+						<span class="fl">手机购买立减¥15</span>
+						<a class="fr" href="">
+							<span class="star-outer">
+								<span class="star-inner"></span>
+							</span>
+							<span>1344人评价</span>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="imgbox">
+					<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+				</div>
+				<div class="txtbox">
+					<div class="txt-title">
+						<a href="">
+							<h4>【回龙观】同湘会</h4>
+							<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+						</a>
+					</div> 
+					<p class="txt-detail">
+						<span class="fl">
+						<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+						</span> 
+						<span class="fr"><i class="salednumber">已售80947</i></span>
+					</p>
+					<p class="txt-extral">
+						<span class="fl">手机购买立减¥15</span>
+						<a class="fr" href="">
+							<span class="star-outer">
+								<span class="star-inner"></span>
+							</span>
+							<span>1344人评价</span>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="imgbox">
+					<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+				</div>
+				<div class="txtbox">
+					<div class="txt-title">
+						<a href="">
+							<h4>【回龙观】同湘会</h4>
+							<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+						</a>
+					</div> 
+					<p class="txt-detail">
+						<span class="fl">
+						<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+						</span> 
+						<span class="fr"><i class="salednumber">已售80947</i></span>
+					</p>
+					<p class="txt-extral">
+						<span class="fl">手机购买立减¥15</span>
+						<a class="fr" href="">
+							<span class="star-outer">
+								<span class="star-inner"></span>
+							</span>
+							<span>1344人评价</span>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="imgbox">
+					<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+				</div>
+				<div class="txtbox">
+					<div class="txt-title">
+						<a href="">
+							<h4>【回龙观】同湘会</h4>
+							<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+						</a>
+					</div> 
+					<p class="txt-detail">
+						<span class="fl">
+						<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+						</span> 
+						<span class="fr"><i class="salednumber">已售80947</i></span>
+					</p>
+					<p class="txt-extral">
+						<span class="fl">手机购买立减¥15</span>
+						<a class="fr" href="">
+							<span class="star-outer">
+								<span class="star-inner"></span>
+							</span>
+							<span>1344人评价</span>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="imgbox">
+					<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+					<span class="nobooking">免预约</span>
+					<span class="voucher">代金券</span>
+				</div>
+				<div class="txtbox">
+					<div class="txt-title">
+						<a href="">
+							<h4>【回龙观】同湘会11</h4>
+							<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+						</a>
+					</div> 
+					<p class="txt-detail">
+						<span class="fl">
+						<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+						</span> 
+						<span class="fr"><i class="salednumber">已售80947</i></span>
+					</p>
+					<p class="txt-extral">
+						<span class="fl">手机购买立减¥15</span>
+						<a class="fr" href="">
+							<span class="star-outer">
+								<span class="star-inner"></span>
+							</span>
+							<span>1344人评价</span>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="imgbox">
+					<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+				</div>
+				<div class="txtbox">
+					<div class="txt-title">
+						<a href="">
+							<h4>【回龙观】同湘会</h4>
+							<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+						</a>
+					</div> 
+					<p class="txt-detail">
+						<span class="fl">
+						<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+						</span> 
+						<span class="fr"><i class="salednumber">已售80947</i></span>
+					</p>
+					<p class="txt-extral">
+						<span class="fl">手机购买立减¥15</span>
+						<a class="fr" href="">
+							<span class="star-outer">
+								<span class="star-inner"></span>
+							</span>
+							<span>1344人评价</span>
+						</a>
+					</p>
+				</div>
+			</div>
+			<div class="item">
+				<div class="imgbox">
+					<a href=""><img src="images/food-pic2.jpg" alt=""></a>
+				</div>
+				<div class="txtbox">
+					<div class="txt-title">
+						<a href="">
+							<h4>【回龙观】同湘会</h4>
+							<p >单人自助午/晚餐2选1，提供免费WiFi</p>
+						</a>
+					</div> 
+					<p class="txt-detail">
+						<span class="fl">
+						<b class="curprice">¥54</b> 门店价 <i class="oldprice">¥59</i>
+						</span> 
+						<span class="fr"><i class="salednumber">已售80947</i></span>
+					</p>
+					<p class="txt-extral">
+						<span class="fl">手机购买立减¥15</span>
+						<a class="fr" href="">
+							<span class="star-outer">
+								<span class="star-inner"></span>
+							</span>
+							<span>1344人评价</span>
+						</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 底部版权 -->
+	<div class="footer-links w1170 clearfix mc mb10">
+		<dl>
+			<dt>获取更新</dt>
+			<dd><a href="">邮件订阅</a></dd>
+			<dd><a href="">iPhone/Android</a></dd>
+			<dd><a href="">美团QQ空间</a></dd>
+			<dd><a href="">美团新浪微博</a></dd>
+			<dd><a href="">sitemap</a></dd>
+			<dd><a href="">RSS订阅</a></dd>
+		</dl>
+		<dl>
+			<dt>商务合作</dt>
+			<dd><a href="">商家合作</a></dd>
+			<dd><a href="">美团商家营销平台</a></dd>
+			<dd><a href="">市场合作</a></dd>
+			<dd><a href="">美团联盟</a></dd>
+			<dd><a href="">美团云</a></dd>
+			<dd><a href="">廉正邮箱</a></dd>
+			<dd><a href="">餐饮开放平台</a></dd>
+			
+		</dl>
+		<dl>
+			<dt>公司信息</dt>
+			<dd><a href="">关于美团</a></dd>
+			<dd><a href="">美团承诺</a></dd>
+			<dd><a href="">媒体报道</a></dd>
+			<dd><a href="">加入我们</a></dd>
+			<dd><a href="">法律声明</a></dd>
+			<dd><a href="">用户协议</a></dd>
+		</dl>
+		<dl>
+			<dt>用户帮助</dt>
+			<dd><a href="">申请退款</a></dd>
+			<dd><a href="">查看美团券密码</a></dd>
+			<dd><a href="">常见问题</a></dd>
+			<dd><a href="">开放API</a></dd>
+			<dd><a href="">反诈骗公告</a></dd>
+		</dl>
+		<div class="fl contact">
+			<div class="contact-content">
+				<img class="contact-icon" src="images/icon-customer-service.png"/>
+				<p>客服电话</p>
+				<p><span class="contact-number">10107888</span> 
+				<span class="contact-time">(9:00-23:00)</span></p>
+				<p class="mt10 mb10">退款、退换货、查看美团券</p>
+				<p><a href="">参考教程，轻松搞定!</a></p>
+			</div>
+		</div>
+<!-- 		<img src="Slices/14.footer1.gif" alt="">
+		<img src="Slices/14.footer2.png" alt=""> -->
+	</div>
+
+	<div class="copyright clearfix">
+		<div class="w1170 mc tc">
+			<p>©2016<a href="">美团网团购</a> meituan.com <a href="">京ICP证070791号</a> | <a href="">京ICP备10211739号</a> | <a href="">电子公告服务规则</a></p>
+			<p><a href="">京公网安备11010502025545号</a></p>
+			
+			<p class="mt20"><a class="icon-record-ft" href="">备案信息</a><a class="icon-credible-ft" href="">可信网站</a><a class="icon-12315-ft" href="">12315消费争议</a></p>
+		</div>
+	</div>
+
+
+</body>
+</html>

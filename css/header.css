@@ -1,0 +1,260 @@
+.top{
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	background-color: #f9f9f9;
+	border-bottom: 1px solid #eee;
+}
+
+.top .basic li{
+	float: left;
+	margin-right: 15px;		/*左边的li*/
+}
+.top .basic .toggle-menu{	/*左边的下拉内容向左靠齐*/
+	left:0;
+}
+.top .user .toggle-menu{    /*右边的下拉内容向右靠齐*/
+	right:0;
+}
+.top .toggleli{				/*所有有下拉内容的li就是相对定位*/
+	position:relative;
+}
+.toggle-menu ul li{
+	clear: both;
+}
+.on a.dropdown{             /*所有有下拉内容的li 获得焦点后 自已发生变化*/
+	border-left: 1px solid #ddd;
+	border-right: 1px solid #ddd;
+	background: #fff;
+}
+.on .toggle-menu{           /*所有有下拉内容的li 获得焦点后 下拉的div内容显示出来*/
+	display: block;
+	border:1px solid #ddd;
+	position:absolute;
+	padding: 0 20px 0 10px;
+	top:29px;
+	background: #fff;
+	z-index:1;	
+	white-space: nowrap;
+	/*background: red;*/
+}
+.on .toggle-menu ul{
+	/*overflow: hidden;*/
+}
+.on .vertical-line{
+	display: none;
+}
+.toggle-menu{               /*默认情况下不显示出来*/
+	display: none;
+}
+a.dropdown{
+	text-decoration: none;  /*注意优先级的问题*/
+	display: inline-block;
+	border-left: 1px solid transparent;
+	border-right: 1px solid transparent;
+	padding: 0 20px 0 10px;
+	position:relative;
+	z-index: 30;
+}
+.icon-mobile{				/*手机美团小图标*/
+	display: inline-block;
+	width: 9px;
+	height: 13px;
+	background: #fff url('../images/sp-main.png') -334px -141px no-repeat;
+	position: relative;
+	top:2px;
+}
+/************************左边的部分***************************************/
+
+.vertical-line{
+	position:absolute;
+	width: 1px;
+	height: 12px;
+	background-color: #ddd;
+	display: inline-block;
+	top:9px;
+	right:-2px;
+}
+
+.top .user li{
+	float: left;
+}
+
+/*----------------------------------------------头部的logo和搜索区域-------------------*/
+.logoandsearch{
+	height: 70px;
+}
+.logowarp{
+	width: 245px;
+}
+.logo-link{  		/*logo图片*/
+	display: inline-block;
+	width: 92px;
+	height: 56px;
+	background:  url('../images/base.png') 0 -896px no-repeat;
+	text-indent: -9999px;
+	float: left;
+}
+.city{
+	
+}
+.city h2{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.search-box{
+	
+}
+.search-box form{
+	width: 480px;
+	height: 37px;
+	border:2px solid #2bb8aa;
+	margin-bottom:10px 
+}
+.search-box form .search-btn{
+	border:none;
+	background-color: #2bb8aa;
+	height: 37px;
+	width: 60px;
+	color:#fff;
+}
+.search-box form .current-search{
+	line-height: 37px;
+	height: 37px;
+	display:inline-block;
+	padding:0 15px 0 10px;
+	border-right: 1px solid #ddd;
+	position:relative;
+}
+.search-box form input{
+	border:none;
+	line-height: 37px;
+	height: 37px;
+	width: 350px;
+	padding:0 10px;
+}
+
+.hotsearch li{
+	float: left;
+	margin-right: 20px;
+}
+.commitment{
+	margin-top:10px;
+}
+.commitment a{
+	margin-left: 20px;
+	display: inline-block;
+	text-align: center;
+}
+/*----------------------------------------------头部的logo和搜索区域 end -------------------*/
+
+/*----------------------------------------------内容导航菜单部分 start -------------------*/
+.menu {
+	height: 40px;
+	background-color: #2bb8aa;
+}
+.menu .menu-categroy{  /*全部分类的那个盒子*/
+	width: 246px;
+	background-color: #1EBDA7;
+	float: left;
+	position: relative;
+}
+.menu .menu-categroy h2{  /*全部分类的那个盒子*/
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	color:#fff;
+	font-size: 16px;
+}
+.menu .menu-bar{
+	overflow: hidden;
+}
+.menu .menu-bar li{
+	float: left;
+	line-height: 40px;
+	height: 40px;
+	padding: 0 20px;
+}
+.menu .menu-bar li:hover{
+	background-color: #1EBD44;
+}
+.menu .menu-bar li a{
+	color:#fff;
+	font-size: 16px;
+	font-weight: bolder;
+	text-decoration: none;
+}
+ul.cate{
+	position:absolute;
+	top:40px;
+	left:0px;
+	height: 480px;
+	width: 246px;
+	border-left: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	background: #f9f9f9;
+	/*border: 1px solid #ddd;
+	border-top:none;*/
+}
+.cate .cate-item{   /*一个li*/
+	height: 48px;
+	border-right: 1px solid #ddd;
+}
+
+.cate .cate-item .cate-item-level1{
+	height: 47px;
+	line-height: 48px;
+	margin-left:20px;
+	border-bottom: 1px solid #ddd;
+	overflow: hidden;
+}
+.cate .cate-item .last {
+	border-bottom: none;
+}
+.cate-item-level1 a{
+	text-decoration: none;
+}
+.cate .cate-item .cate-item-level2{
+	position:absolute;
+	padding:0 20px;
+	height:480px;
+	background: #fff;
+	border:1px solid #ddd;
+	border-top:none;
+	border-left:none;
+	left:246px;
+	top:0;
+	white-space: nowrap;
+	display: none;
+}
+
+.cate .on{
+	border-right:1px solid transparent;
+	background: #fff;
+}
+.cate .on .icon-arrow-right{
+	/*visibility: none;*/
+	/*display: none;*/
+	visibility: hidden;
+}
+.cate .on .cate-item-level2{
+	display: block;
+}
+.cate .cate-item .cats-item-name a{
+	font-size: 14px;
+	font-weight: bolder;
+	color:#333;
+	text-decoration: none;
+}
+.cate .cate-item .cate-item-level2 dl{
+	display: inline-block;
+	line-height: 25px;
+	margin-left: 20px;
+}
+.cate .cate-item .cate-item-level2 dl dt{
+	line-height: 45px;
+	font-size:16px;
+}
+.cate .cate-item .cate-item-level2 dl a{
+	text-decoration: none;
+}
