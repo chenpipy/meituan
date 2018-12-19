@@ -1,0 +1,309 @@
+/*header.css*/
+/* 清除内外边距 */
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+fieldset, lengend, button, input, textarea, /* form elements 表单元素 */
+th, td { /* table elements 表格元素 */
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* 设置默认字体 */
+body, button, input, select, textarea { /* for ie */
+    font: 12px/1 Tahoma, Helvetica, Arial, "\5b8b\4f53", sans-serif; /* 用 ascii 字符表示，使得在任何编码下都无问题 */
+}
+
+a {
+    text-decoration: none;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.w1170 {
+    width: 1170px;
+}
+
+.mb10 {
+    margin-bottom: 10px;
+}
+
+.mc {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+}
+
+/*top顶部状态栏部分*/
+.top {
+    width: 100%;
+    background-color: #f9f9f9;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #eee;
+}
+
+.top .basic li { /*左边li部分*/
+    float: left;
+    margin: 0 5px;
+}
+
+.top .user li { /*右边li部分*/
+    float: left;
+    margin: 0 6px;
+}
+
+.top .basic .collect { /*五角星收藏图标*/
+    background: url("../images/star.png") 0 0 no-repeat;
+    padding-left: 15px;
+}
+
+.top .basic .collect:hover { /*五角星收藏图标*/
+    background: url("../images/star-hover.png") 0 0 no-repeat;
+    /*padding-left: 15px; 可以不再写，因为之前已经谢过了，只要更新下url就行了*/
+}
+
+.top .icon-mobile { /*手机小图标*/
+    background: url("../images/sp-main.png") -334px -141px no-repeat;
+    width: 9px;
+    height: 13px;
+    display: inline-block;
+    top: 2px;
+    /*margin-top: 2px; 为什么不用，因为margin-top，同行的其他元素会有影响*/
+    position: relative;
+    top: 1.5px;
+}
+
+.top a.dropdown:hover .icon-mobile { /*移上时改变图标*/
+    background: #fff url('../images/sp-main.png') -334px -165px no-repeat;
+}
+
+.top a.dropdown:hover .icon-mobile:hover { /*移上时改变图标*/
+    background: #fff url('../images/sp-main.png') -334px -165px no-repeat;
+}
+
+.icon-tri { /*顶部需要用到的向下的小箭头* .top a.dropdown */
+    display: inline-block;
+    position: relative;
+    width: 0;
+    height: 0;
+    border: 3px solid transparent;
+    border-top: 3px solid #333;
+}
+
+a:hover .icon-tri { /*移上时改变箭头.top a.dropdown:hover .icon-tri*/
+    border: 3px solid transparent;
+    border-bottom: 3px solid #2bb8aa;
+    bottom: 3px;
+}
+
+.top .toggleli {
+    position: relative;
+}
+
+.top .vertical-line { /*右侧的分割线*/
+    position: absolute;
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #ddd;
+    right: -2px;
+    top: 9px;
+}
+
+.top .dropdown { /*具备下拉内容的a标记*/
+    position: relative; /*position不能为默认的static，不然z-index将不起作用*/
+    text-decoration: none;
+    z-index: 20;
+    padding: 0 10px;
+    display: inline-block;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+
+.top .toggle-menu {
+    display: none;
+    position: absolute;
+    top: 26px;
+    left: 0px;
+    white-space: nowrap;
+    z-index: 19;
+    padding: 0 5px 5px 18px;
+    border: 1px solid #ddd;
+    background-color: #ffffff;
+}
+
+.top .toggle-menu li {
+    clear: both; /**/
+    margin-left: 0;
+}
+
+.top .on .toggle-menu {
+    display: block;
+}
+
+.top .icon-weixing {
+    display: block;
+    width: 93px;
+    height: 93px;
+    background: #fff url("../images/wx.png") 0 0 no-repeat;
+}
+
+.top .on a.dropdown { /*鼠标移上时的变化*/
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    background-color: #fff;
+    margin: 0;
+}
+
+.top .on a.dropdown .vertical-line {
+    right: -1px;
+    /*background-color:red;*/
+}
+
+/*头部左边部分完结*/
+
+/*头部右边部分start*/
+.user .on .toggle-menu {
+    right: 0px;
+    left: auto;
+}
+
+/*logo搜索区域*/
+.logo {
+    margin: auto;
+    height: 70px;
+}
+
+.logo .logo-link {
+    background: url("../images/sp-main.png") -258px -43px no-repeat;
+    display: inline-block;
+    width: 90px;
+    height: 60px;
+    text-indent: -999px;
+}
+
+.logo .city h2 {
+    margin: 6px 0px 18px 0px;
+}
+
+.logo .search-box{
+    margin-left: 193px;
+}
+.logo form{
+    border:2px solid #2db8ad;
+}
+.logo .current-search-box{
+    display: inline-block;
+    font-size: 14px;
+    height:38px;
+    line-height: 38px;
+    padding:0 15px 0 15px;
+}
+.logo .search-input{    /*表单中的搜索框*/
+    height:38px;
+    line-height: 38px;
+    width:343px;
+    border:none;
+    border-left:1px solid #ccc;
+    padding:0px 5px;
+}
+.logo .search-btn{
+    height:38px;
+    width:65px;
+    background-color: #2db8ad;
+    border:none;
+    color:#fff;
+    font-size:14px;
+}
+    /*menu菜单栏部分*/
+
+.nav {
+    height: 520px;
+    margin: auto;
+}
+
+.menu {
+    height: 40px;
+}
+
+.menu-categroy { /*全部分类的盒子*/
+    width: 246px;
+    height: 40px;
+    background-color: #2bb88a;
+    position: relative;
+}
+
+.menu-categroy h3 {
+    line-height: 40px;
+    height: 40px;
+    margin-left: 20px;
+    text-align: center;
+    color: #fff;;
+}
+
+.cats { /*展开容器的一个ul*/
+    width: 100%;
+    position: absolute;
+    top: 40px;
+    left: 0px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.cates-item { /*展开容器的一个li*/
+    /*因为li中的行高并不完全一样，所以不能这样设置*/
+    /* height: 50px;
+     line-height: 50px;*/
+
+}
+
+.cats-level1 { /*li中的第一个div*/
+    height: 50px;
+    line-height: 50px;
+    margin-left: 10px;
+
+}
+
+.cats-item-name { /*div中第一个span*/
+    font-size: 16px;
+    color: #000;
+    font-weight: bolder;
+}
+
+.menu-bar {
+    background-color: #2bb8aa;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
+}
+
+.menu-bar li {
+    float: left;
+}
+
+.menu-bar li a {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bolder;
+    padding: 0 27px;
+}
+
+.icon-arrow-right {
+    background: #fff url('../images/arrow-right.png') center center no-repeat;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+    top: 15px;
+}

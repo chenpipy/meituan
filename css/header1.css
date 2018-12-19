@@ -27,7 +27,7 @@
 	display: inline-block;
 	width: 9px;
 	height: 13px;
-	background: #fff url('../images/login-sp.png') -334px -141px no-repeat;
+	background: #fff url('../images/sp-main.png') -334px -141px no-repeat;
 	position: relative;
 	top:2px;
 }
@@ -40,9 +40,12 @@
 	display: inline-block;
 	border-left : 1px solid transparent;
 	border-right : 1px solid transparent;
-}  
+}
 .top a.dropdown:hover .icon-mobile{  /*移上时改变图标*/
-	background: #fff url('../images/login-sp.png') -334px -165px no-repeat;
+	background: #fff url('../images/sp-main.png') -334px -165px no-repeat;
+}
+.top a.dropdown:hover .icon-mobile:hover{  /*移上时改变图标*/
+	background: #fff url('../images/sp-main.png') -334px -165px no-repeat;
 }
 a:hover .icon-tri{	/*移上时改变箭头.top a.dropdown:hover .icon-tri*/
 	top:9px;
@@ -78,14 +81,14 @@ a:hover .icon-tri{	/*移上时改变箭头.top a.dropdown:hover .icon-tri*/
 .top .toggle-menu{
 	border: 1px solid #ddd;
 	position: absolute;
-	background-color: #fff;	
+	background-color: #fff;
 	padding:0 15px 0 13px;
 	top:28px;
 	white-space: nowrap;
 	z-index: 19;
 	display: none;
 }
-.top .toggle-menu ul{	
+.top .toggle-menu ul{
 	/*overflow: hidden;解决li元素浮动后的坍塌问题*/
 }
 .top .toggle-menu li{
@@ -194,7 +197,7 @@ a:hover .icon-tri{	/*移上时改变箭头.top a.dropdown:hover .icon-tri*/
 	height: 24px;
 	display: block;
 	margin-bottom: 5px;
-	
+
 }
 .logo .commitment .icon-expire{
 	background: #fff url('../images/icon-expire-big.png') 0 0 no-repeat;
@@ -271,7 +274,7 @@ a:hover .icon-tri{	/*移上时改变箭头.top a.dropdown:hover .icon-tri*/
 	width: 20px;
 	height: 20px;
 	display: inline-block;
-	position: relative;			
+	position: relative;
 	top:10px;
 }
 .menu .cats .cats-item  .cats-level2{	/*第二级用于向右展开的div*/
@@ -294,7 +297,7 @@ a:hover .icon-tri{	/*移上时改变箭头.top a.dropdown:hover .icon-tri*/
 }
 .cats-level2{
 	display: none;
-	
+
 }
 .cats-level2 dl,dt,dd{
 	white-space: nowrap;
@@ -370,7 +373,7 @@ a:hover .icon-tri{	/*移上时改变箭头.top a.dropdown:hover .icon-tri*/
 	position: relative;
 	top:5px;
 	margin-right: 5px;
-	
+
 }
 .icon-hot-area{
 	background:url("../images/hot-area.png") no-repeat;
@@ -392,7 +395,7 @@ a:hover .icon-tri{	/*移上时改变箭头.top a.dropdown:hover .icon-tri*/
 }
 .slide{/*轮播图片集*/
 	overflow: hidden;
-	
+
 }
 .slide ul{
 	overflow: hidden;
@@ -577,7 +580,7 @@ a:hover .icon-tri{	/*移上时改变箭头.top a.dropdown:hover .icon-tri*/
 /*	height: 260px;
 	width: 100%;*/
 	/*background-color: rgba(0,0,0,0.8);*/
-	
+
 }
 .food .famouscontent .item-list{
 	overflow: hidden;
@@ -607,7 +610,7 @@ a:hover .icon-tri{	/*移上时改变箭头.top a.dropdown:hover .icon-tri*/
 .food .famouscontent .item-list .item .txt-title{
 /*	height: 82px;*/
 	height: 50px;
-	
+
 }
 .food .famouscontent .item-list .item .txt-title h5{
 	font-size: 16px;
