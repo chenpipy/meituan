@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        html, body {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        .fr {
+            float: right;
+        }
+
+        .fl {
+            float: left;
+        }
+
+        .box {
+            width: 100%;
+            background-color: #eeeeee;
+            border: 1px solid red;
+        }
+
+        .container div:first-child {
+            background-color: #1EBDA7;
+        }
+
+        .container div:last-child {
+            background-color: #666666;
+        }
+
+        .clearfix:after {   /*添加此类可以清楚浮动*/
+            display: block;
+            content: '';
+            width: 0;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        .cats li:last-child{/*注意用来选中最后一个li的时候，后面不能再有嵌套的li*/
+            background-color: #1EBDA7;
+        }
+    </style>
+</head>
+<body class="container">
+<div>
+</div>
+<div>
+</div>
+<div class="box clearfix">
+    <div class="fl">
+        我是第一个div<br>
+        我是第一个div
+    </div>
+    <div class="fl">
+        我是第二个div
+    </div>
+</div>
+<ul class="cats">
+    <li>为了选中最后一个li的</li>
+    <li>为了选中最后一个li的</li>
+    <li>为了选中最后一个li的</li>
+    <li>为了选中最后一个li的</li>
+    <li>为了选中最后一个li的</li>
+    <ul>
+        <li>我是另一个ul中的li</li>
+    </ul>
+</ul>
+</body>
+</html>
