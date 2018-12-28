@@ -1,0 +1,39 @@
+html,body{
+    height:100%;
+    padding:0;
+    margin:0;
+}
+#flash{
+    position: relative;
+    width:1226px;
+    height: 460px;
+    border: 1px solid red;
+    margin: auto;
+    overflow:hidden;
+}
+#flash img{
+    width:1226px;
+    height:460px;
+    display: none;
+}
+#flash .item1{
+    display: block;
+}
+#flash .control{
+    position: absolute;
+    bottom:30px;
+    right:40px;
+}
+#flash .control li{
+    display: inline-block;
+    list-style: none;
+    width:6px;
+    height:6px;
+    background-color: rgb(71, 71, 71);
+    border: 2px solid rgb(144, 144, 144);
+    border-radius: 6px;
+    cursor: pointer;
+}
+#flash .control li:first-child{
+    background-color: #fff;
+}
