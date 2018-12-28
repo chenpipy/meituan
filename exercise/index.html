@@ -5,6 +5,8 @@
     <title>Title</title>
     <link rel="stylesheet" href="common.css">
     <link rel="stylesheet" href="header.css">
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/meituan.js"></script>
 </head>
 <body>
 <!--top顶部-->
@@ -71,15 +73,34 @@
         </div>
     </div>
     <div class="search-box fl">
-        <form action="" class="">
+        <form action="">
             <div class="current-search-box">
                 <a href="" class="current-search"><span>团购</span><i class="icon-tri"></i></a>
             </div>
-            <input type="text" class="search-input" placeholder="请输入信息">
-            <input class="search-btn" type="button" value="搜索">
+            <input type="text" class="search-input" placeholder="请输入信息"><input class="search-btn" type="button"
+                                                                               value="搜索">
         </form>
+        <ul class="hotsearch">
+            <li><a href=""> 正一味</a></li>
+            <li><a href=""> 披萨</a></li>
+            <li><a href=""> 蛋糕</a></li>
+            <li><a href=""> 权金城</a></li>
+            <li><a href=""> 巴依</a></li>
+            <li><a href=""> 黄记煌</a></li>
+            <li><a href=""> 再清椿</a></li>
+            <li><a href=""> 秦门</a></li>
+            <li><a href=""> 味多美</a></li>
+        </ul>
+        <a href=""></a>
+
     </div>
-    <div class="commitment fr"></div>
+    <div class="commitment fr">
+        <ul>
+            <li><a href=""><i class="icon-return"></i><span>随时退</span></a></li>
+            <li><a href=""><i class="icon-return"></i><span>不满意面单</span></a></li>
+            <li><a href=""><i class="icon-return"></i><span>过期退</span></a></li>
+        </ul>
+    </div>
 
 </div>
 <!--菜单栏-->
@@ -88,21 +109,384 @@
         <div class="menu-categroy fl">
             <div>
                 <h3>全部分类</h3>
-                <ul class="cats">
+                <ul class="cats" id="cats">
+                    <li class="cates-item on">
+                        <div class="cats-level1">
+                            <span class="fl cats-item-name"><a href="" class="fl">美食</a></span>
+                            <span class="fr">
+                                <i class="icon-arrow-right fr"></i>
+                                <a href="">自助餐</a>
+                                <a href="">代金券</a>
+                            </span>
+                        </div>
+                        <div class="cates-level2">
+                           <dl>
+                               <dt class="fs-16 mb20"><a href="" >美食</a></dt>
+                               <dd><a href="">代金券</a></dd>
+                               <dd><a href="">甜点饮品</a></dd>
+                               <dd><a href="">火锅</a></dd>
+                               <dd><a href="">自助</a></dd>
+                               <dd><a href="">小吃快餐</a></dd>
+                               <dd><a href="">日韩料理</a></dd>
+                               <dd><a href="">西餐</a></dd>
+                               <dd><a href="">聚餐宴请</a></dd>
+                               <dd><a href="">烧烤烤肉</a></dd>
+                               <dd><a href="">东北菜</a></dd>
+                               <dd><a href="">川湘菜</a></dd>
+                               <dd><a href="">小吃快餐</a></dd>
+                               <dd><a href="">日韩料理</a></dd>
+                               <dd><a href="">西餐</a></dd>
+                               <dd><a href="">聚餐宴请</a></dd>
+                           </dl>
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >购物</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+
+                            </dl>
+                        </div>
+                    </li>
                     <li class="cates-item">
                         <div class="cats-level1">
                             <span class="fl cats-item-name"><a href="" class="fl">美食</a></span>
                             <span class="fr">
                                 <i class="icon-arrow-right fr"></i>
-                            <a href="">自助餐</a>
-                            <a href="">代金券</a>
+                                <a href="">自助餐</a>
+                                <a href="">代金券</a>
                             </span>
                         </div>
-                    </li>
-                    <li>
-                    </li>
-                    <li>
+                        <div class="cates-level2">
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >美食</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                                <dd><a href="">烧烤烤肉</a></dd>
+                                <dd><a href="">东北菜</a></dd>
+                                <dd><a href="">川湘菜</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                            </dl>
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >购物</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
 
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cates-item">
+                        <div class="cats-level1">
+                            <span class="fl cats-item-name"><a href="" class="fl">美食</a></span>
+                            <span class="fr">
+                                <i class="icon-arrow-right fr"></i>
+                                <a href="">自助餐</a>
+                                <a href="">代金券</a>
+                            </span>
+                        </div>
+                        <div class="cates-level2">
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >美食1</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                                <dd><a href="">烧烤烤肉</a></dd>
+                                <dd><a href="">东北菜</a></dd>
+                                <dd><a href="">川湘菜</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                            </dl>
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >购物1</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cates-item">
+                        <div class="cats-level1">
+                            <span class="fl cats-item-name"><a href="" class="fl">美食</a></span>
+                            <span class="fr">
+                                <i class="icon-arrow-right fr"></i>
+                                <a href="">自助餐</a>
+                                <a href="">代金券</a>
+                            </span>
+                        </div>
+                        <div class="cates-level2">
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >美食</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                                <dd><a href="">烧烤烤肉</a></dd>
+                                <dd><a href="">东北菜</a></dd>
+                                <dd><a href="">川湘菜</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                            </dl>
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >购物</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cates-item">
+                        <div class="cats-level1">
+                            <span class="fl cats-item-name"><a href="" class="fl">美食</a></span>
+                            <span class="fr">
+                                <i class="icon-arrow-right fr"></i>
+                                <a href="">自助餐</a>
+                                <a href="">代金券</a>
+                            </span>
+                        </div>
+                        <div class="cates-level2">
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >美食</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                                <dd><a href="">烧烤烤肉</a></dd>
+                                <dd><a href="">东北菜</a></dd>
+                                <dd><a href="">川湘菜</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                            </dl>
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >购物</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cates-item">
+                        <div class="cats-level1">
+                            <span class="fl cats-item-name"><a href="" class="fl">美食</a></span>
+                            <span class="fr">
+                                <i class="icon-arrow-right fr"></i>
+                                <a href="">自助餐</a>
+                                <a href="">代金券</a>
+                            </span>
+                        </div>
+                        <div class="cates-level2">
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >美食</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                                <dd><a href="">烧烤烤肉</a></dd>
+                                <dd><a href="">东北菜</a></dd>
+                                <dd><a href="">川湘菜</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                            </dl>
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >购物</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cates-item">
+                        <div class="cats-level1">
+                            <span class="fl cats-item-name"><a href="" class="fl">美食</a></span>
+                            <span class="fr">
+                                <i class="icon-arrow-right fr"></i>
+                                <a href="">自助餐</a>
+                                <a href="">代金券</a>
+                            </span>
+                        </div>
+                        <div class="cates-level2">
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >美食</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                                <dd><a href="">烧烤烤肉</a></dd>
+                                <dd><a href="">东北菜</a></dd>
+                                <dd><a href="">川湘菜</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                            </dl>
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >购物</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cates-item">
+                        <div class="cats-level1">
+                            <span class="fl cats-item-name"><a href="" class="fl">美食</a></span>
+                            <span class="fr">
+                                <i class="icon-arrow-right fr"></i>
+                                <a href="">自助餐</a>
+                                <a href="">代金券</a>
+                            </span>
+                        </div>
+                        <div class="cates-level2">
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >美食</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                                <dd><a href="">烧烤烤肉</a></dd>
+                                <dd><a href="">东北菜</a></dd>
+                                <dd><a href="">川湘菜</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                            </dl>
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >购物</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+
+                            </dl>
+                        </div>
+                    </li>
+                    <li class="cates-item">
+                        <div class="cats-level1">
+                            <span class="fl cats-item-name"><a href="" class="fl">美食</a></span>
+                            <span class="fr">
+                                <i class="icon-arrow-right fr"></i>
+                                <a href="">自助餐</a>
+                                <a href="">代金券</a>
+                            </span>
+                        </div>
+                        <div class="cates-level2">
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >美食</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                                <dd><a href="">烧烤烤肉</a></dd>
+                                <dd><a href="">东北菜</a></dd>
+                                <dd><a href="">川湘菜</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+                            </dl>
+                            <dl>
+                                <dt class="fs-16 mb20"><a href="" >购物</a></dt>
+                                <dd><a href="">代金券</a></dd>
+                                <dd><a href="">甜点饮品</a></dd>
+                                <dd><a href="">火锅</a></dd>
+                                <dd><a href="">自助</a></dd>
+                                <dd><a href="">小吃快餐</a></dd>
+                                <dd><a href="">日韩料理</a></dd>
+                                <dd><a href="">西餐</a></dd>
+                                <dd><a href="">聚餐宴请</a></dd>
+
+                            </dl>
+                        </div>
                     </li>
                 </ul>
             </div>
