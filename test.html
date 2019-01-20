@@ -1,53 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<title>Document</title>
-	
-	<style>
-		#outer{
-			width: 300px;
-			height:100px;
-			position: relative;
-			background-color: #ccc;
-			line-height: 100px;
-		}
-		#inner{
-			width: 340px;
-			height:400px;
-			top:99px;
-			left:10px;
-			position: absolute;
-			background-color: red;
-			padding: 50px;
-		}
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        html,body,ul,li,p{
+            margin:0;
+            padding: 0;
+        }
+        .copyright{
+            position: absolute;
+            left:50%;
+            bottom:5%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+        }
+    </style>
 </head>
-<body>
-	<div id="outer">
-		outer
-		<div id="inner">inner</div>
-	</div>
-	<script>
-		function fun(n,o) {
-			console.info("o="+o);
-			return{
-				fun:function(m){
-					return fun(m,n);
-				}
-			};
-		}
-
-		var a = fun(0);
-		a.fun(1);
-		a.fun(2);
-		a.fun(3);
-		console.info("----------------")
-		var b = fun(0).fun(1).fun(2).fun(3);
-console.info("----------------")
-		var c = fun(0).fun(1);
-		c.fun(2);
-		c.fun(3);
-	</script>
+<body >
+<h1 style="text-align: center;font-size: 50px;top:80px;font-weight: bold;color: #696969"><b>郴州市不动产登记级交易系统</b></h1>
+<ul id="Login"  class="mui-table-view" style="width:700px;top:150px;list-style-type:none;text-align:center;margin: auto;">
+    <li style="width:300px; height:120px; float:left; margin:60px auto auto auto; line-height:120px; text-align:center; font-size:30px; font-weight:bold; cursor:pointer; color:#ffffff; background-color:#00BFFF;display:inline;" onclick="window.location.href='http://172.26.9.44:8888'">不动产登记系统</li>
+    <li style="width:300px; height:120px; float:right; margin:60px auto auto auto; line-height:120px; text-align:center; font-size:30px; font-weight:bold; cursor:pointer; color:#ffffff; background-color:#4169E1;display:inline;" onclick="window.location.href='http://172.26.9.44:8888/Default_ARCHIVE.aspx'">不动产档案系统</li>
+</ul>
+<ul id="Login1" style="width:700px;top:350px;list-style-type:none;text-align:center;margin: auto">
+    <li style="width:300px; height:120px; float:left; margin:60px auto auto auto; line-height:120px; text-align:center; font-size:30px; font-weight:bold; cursor:pointer; color:#ffffff; background-color:#B8860B;display:inline;" onclick="window.location.href='http://172.26.9.16:6666/'">不动产交易系统</li>
+    <li style="width:300px; height:120px; float:right; margin:60px auto auto auto; line-height:120px; text-align:center; font-size:30px; font-weight:bold; cursor:pointer; color:#ffffff; background-color:#0072E3;display:inline;" onclick="window.location.href='http://172.26.9.16:6666/'">不动产权籍管理系统</li>
+</ul>
 </body>
+<footer>
+    <p class="copyright">版权所有 @2003-2018  广东省南方数码科技股份有限公司</p>
+</footer>
 </html>

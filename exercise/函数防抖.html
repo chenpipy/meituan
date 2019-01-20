@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        input {
+            display: inline-block;
+            width: 200px;
+            height: 30px;
+            margin: 10px;
+            border: 1px solid #eeeeee;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<label for=""></label>
+<div>
+    <label for="normal">没有防抖测试：</label>
+    <input type="text" id="normal" placeholder="没有防抖">
+</div>
+<div id="div1">
+    <label for="debounce">防抖测试：</label>
+    <input type="text" id="debounce" placeholder="加入防抖">
+</div>
+<script>
+    var normal = document.getElementById("normal")
+    var abnormal = document.getElementById("debounce")
+
+    normal.onkeyup = ajax
+
+    /*e.target 指向触发事件监听的对象。
+      e.currentTarget 指向添加监听事件的对象*/
+    function ajax(e) {
+        console.log(e.target.value + "M")
+    }
+
+    function debounce(fn, delay) {
+        var timer = null;
+        return function (e) {
+            var _this = this
+            console.log(2)
+            clearTimeout(timer)
+            timer = setTimeout(function () {
+                fn.apply(_this, [e])
+            }, delay)
+        }
+    }
+
+    function debouncePro(fn, delay, immediate) {
+        var timer = null,
+            that;
+        return function (e) {
+            that = this;
+            clearTimeout(timer);
+            if (immediate) {  //是否立即执行
+                if (!timer) {  // 如果没有设置定时器就先执行
+                    fn.apply(that, [e]);
+                }
+                timer = setTimeout(function () {
+                    timer = null;// 设置定时器，使其在delay毫秒内不能执行，过了delay毫秒后在执行
+                }, delay);
+            } else { //否则延时执行
+                timer = setTimeout(function () {
+                    fn.apply(that, [e])
+                }, delay);
+            }
+        };
+    }
+
+    abnormal.onkeyup = debounce(ajax, 2000, true);
+
+    var a=(
+        function () {
+            document.body.onload = addElement;
+
+            function addElement () {
+                // create a new div element
+                // and give it some content
+                var newDiv = document.createElement("div");
+                var newContent = document.createTextNode("Hi there and greetings!");
+                newDiv.appendChild(newContent); //add the text node to the newly created div.
+
+                // add the newly created element and its content into the DOM
+                var currentDiv = document.getElementById("div1");
+                document.body.insertBefore(newDiv, currentDiv);
+            }
+        }
+    )()
+    console.log(a)
+</script>
+
+</body>
+</html>
