@@ -34,7 +34,7 @@
             background-color: #666666;
         }
 
-        .clearfix:after {   /*添加此类可以清楚浮动*/
+        .clearfix:after { /*添加此类可以清楚浮动*/
             display: block;
             content: '';
             width: 0;
@@ -42,7 +42,14 @@
             clear: both;
             visibility: hidden;
         }
-        .cats li:last-child{/*注意用来选中最后一个li的时候，后面不能再有嵌套的li*/
+        /*超级重要，如果存在嵌套的情况，直接用last-child，则可能存在把嵌套的数据选送的情况，下面的意思是，.cats
+        下面的子元素中，倒数第二个是li设置背景色，如果改为1，则不生效，原因是.cats下最后一个元素是ul并不是li，
+        所以不满足条件
+        */
+        .cats > li:nth-last-child(2) {/*本意是想让.cats下的最后一个li设置背景色，但是不要包含后代元素中的li*/
+        background-color: orange;
+        }
+        .cats ul li:last-child { /*表示.cats ul下面的最后一个li设置背景色*/
             background-color: #1EBDA7;
         }
     </style>
@@ -68,7 +75,9 @@
     <li>为了选中最后一个li的</li>
     <li>为了选中最后一个li的</li>
     <ul>
-        <li>我是另一个ul中的li</li>
+        <li>我是另一个ul中的li1</li>
+        <li>我是另一个ul中的li2</li>
+        <li>我是另一个ul中的li3</li>
     </ul>
 </ul>
 </body>
