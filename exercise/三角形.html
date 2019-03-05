@@ -4,20 +4,66 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <style>
+        html,body{
+            color:red;
+            font-size: 30px;
+        }
         .box{
             width:100%;
-            height:500px;
+            height:100px;
         }
         .icon-tri{
             display: inline-block;
             border:6px solid transparent;
             border-right-color: #ff3e32;
         }
+        img{
+            width:300px;
+        }
+        .container{
+            width:30px;
+            height:30px;
+            background: url("../images/base.png")  no-repeat 0 -300px;
+        }
+        .trans li{
+            width:200px;
+            height: 200px;
+            list-style: none;
+            background-color: #00BFFF;
+            display: inline-block;
+            margin-right: 30px;
+        }
+       /* .trans li:hover{
+            animation:my-move 1s linear forwards;
+        }
+        @keyframes my-move {
+            from{}
+            to{transform:translate(10px,-50px)}
+        }*/
+        .trans li:hover{
+            transition: 1s;
+            transform: scale(1.1);
+        }
+
     </style>
 </head>
 <body>
 <div class="box">
     <i class="icon-tri"></i>
+    <p>我也是这样的吗</p>
 </div>
+<div>
+    <img src="../images/baner.jpg" alt="123">
+</div>
+<div class="container">
+
+</div>
+<ul class="trans">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
 </body>
 </html>

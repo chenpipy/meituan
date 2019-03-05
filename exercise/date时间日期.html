@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/uDate.js"></script>
+</head>
+<body>
+<script>
+    //假设今天是2018-09-07
+    var startDate = new Date().getNewDate(-6);  //2018-09-01
+    var endDate = new Date().getNewDate(0);     //2018-09-07
+
+    //['2018-09-01','2018-09-02','2018-09-03','2018-09-04','2018-09-05','2018-09-06'，'2018-09-07']
+    var dateArray = getDateRangeArray(startDate,endDate,'day');
+    var dateLength = getDateRangeLength(startDate,endDate,'day');       //时间差
+
+    //一般为求环比的时候用到
+    var lastStartDate = new Date(startDate).getNewDate(-dateLength)
+</script>
+
+</body>
+</html>
