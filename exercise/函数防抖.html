@@ -69,13 +69,13 @@
         };
     }
 
-    abnormal.onkeyup = debounce(ajax, 2000, true);
+    abnormal.onkeyup = debounce(ajax, 2000);
 
-    var a=(
+    var a = (
         function () {
             document.body.onload = addElement;
 
-            function addElement () {
+            function addElement() {
                 // create a new div element
                 // and give it some content
                 var newDiv = document.createElement("div");
@@ -89,6 +89,48 @@
         }
     )()
     console.log(a)
+
+    /*
+    * 原来的处理方式
+    * */
+    var l;
+
+    function test1() {
+        if (l) clearInterval(l)
+        var m = 0
+        l = setInterval(function () {
+            m++
+            console.log(m)
+            if (m > 10) {
+                clearInterval()
+            }
+        }, 1000)
+    }
+
+    // test1()
+
+    /*
+    * 现在的处理方式
+    * */
+    function test() {
+        var interval = null;
+        return function () {
+            var a = 0
+            clearInterval(interval);
+            interval = setInterval(function () {
+                a++;
+                console.log(a)
+                if (a > 10) {
+                    clearInterval(interval)
+                }
+            }, 1000)
+        }
+    }
+
+    var test3 = test();
+    setInterval(function () {
+        test3()
+    }, 3000)
 </script>
 
 </body>
